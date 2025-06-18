@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Elementos decorativos -->
+    <div class="decoracao decoracao-1"></div>
+    <div class="decoracao decoracao-2"></div>
+    <div class="decoracao decoracao-3"></div>
+
+    <!-- Tela Inicial -->
+    <div class="container" id="telaInicial">
+        <h1 class="titulo-quiz">QUIZZ</h1>
+        <div class="creditos">esse questionário está sendo feito por...</div>
+        <input type="text" class="nome-input" id="nomeInput" placeholder="Digite seu nome">
+        <div class="botoes">
+            <button class="btn btn-iniciar" id="btnIniciar">Iniciar</button>
+            <button class="btn btn-sair" id="btnSair">Sair</button>
+        </div>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div class="container" id="telaPerguntas" style="display: none;">
+        <div class="contador-perguntas" id="contadorPerguntas"></div>
+        <div class="tentativas" id="tentativas"></div>
+        <div class="pergunta-container" id="perguntaContainer">
+            <div class="pergunta" id="pergunta"></div>
+            <div class="opcoes" id="opcoes"></div>
+        </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback" id="feedback"></div>
+
+    <!-- Tela Final Aprimorada -->
+    <div class="container" id="telaFinal" style="display: none;">
+        <div class="tela-final">
+            <div class="resultado-container">
+                <div class="resultado" id="resultadoFinal"></div>
+                <div class="emoji-resultado" id="emojiResultado"></div>
+                <div class="estrelas" id="estrelas"></div>
+            </div>
+            
+            <div class="pontuacao-container">
+                <div class="pontuacao" id="pontuacaoFinal"></div>
+                <div class="porcentagem" id="porcentagemFinal"></div>
+                <div class="progresso-container">
+                    <div class="progresso-barra" id="progressoBarra"></div>
+                </div>
+                <div class="mensagem-final" id="mensagemFinal"></div>
+            </div>
+            
+            <div class="botoes" style="margin-top: 40px;">
+                <button class="btn btn-iniciar" id="btnReiniciar">Reiniciar</button>
+                <button class="btn btn-sair" id="btnSairFinal">Sair</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scrips.js"></script>
+</body>
+</html>
